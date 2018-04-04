@@ -58,5 +58,5 @@ COPY wait-for-it.sh /home/docker/code/
 #COPY .env /var/
 
 WORKDIR /home/docker/
-EXPOSE 8000
+#EXPOSE 8000
 #CMD ["supervisord", "-n", "-c", "/home/docker/code/supervisor-app.conf"]

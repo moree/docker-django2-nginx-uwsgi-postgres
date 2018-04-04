@@ -9,9 +9,13 @@ services:
         restart: always
         build: webapp
         image: django_uwsgi
+        links:
+            - postgres:postgres
         volumes:
             - static:/var/www/djangopj/static
         command: /bin/ash -c "/home/docker/code/wait-for-it.sh postgres:5432 -t 60 && python3 /var/www/djangopj/manage.py migrate && supervisord -n -c /home/docker/code/supervisor-app.conf"
+        expose:
+            - "8000"
         depends_on:
             - postgres
 
