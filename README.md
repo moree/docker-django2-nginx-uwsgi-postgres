@@ -8,15 +8,15 @@
 docker-compose up
 ```
 
-# Rebuild
+## Rebuild
 
 ```
 docker-compose build --no-cache
 ```
 
-# URL which you can confirm
+## URL which you can confirm
 
-## Web server
+### Web server
 http://localhost/
 
 # License
