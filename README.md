@@ -18,7 +18,3 @@ docker-compose build --no-cache
 
 ### Web server
 http://localhost/
-
-# License
-
-MIT
